@@ -24,5 +24,9 @@
     "isbot": "^4.4.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.9.1",
+    "vite": "^5.2.10"
   }
 }
