@@ -11,7 +11,12 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import appStylesHref from "./app.css";
-import { getContacts } from "./data";
+import { createEmptyContact, getContacts } from "./data";
+
+export const action = async () => {
+  const contact = await createEmptyContact();
+  return json({ contact });
+};
 
 // Каждый маршрут может экспортировать функцию ссылок
 export const links: LinksFunction = () => [
