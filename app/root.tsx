@@ -54,6 +54,7 @@ export default function App() {
   );
 }
 
+// Каждый маршрут может экспортировать функцию ссылок
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: appStylesHref },
 ];
